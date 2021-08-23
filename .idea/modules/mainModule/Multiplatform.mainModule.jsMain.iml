@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output url="file://$MODULE_DIR$/../../../mainModule/build/classes/kotlin/js/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../mainModule/build/externals/Multiplatform-mainModule/src" />
+    <content url="file://$MODULE_DIR$/../../../mainModule/src/jsMain/kotlin">
+      <sourceFolder url="file://$MODULE_DIR$/../../../mainModule/src/jsMain/kotlin" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../mainModule/src/jsMain/resources">
+      <sourceFolder url="file://$MODULE_DIR$/../../../mainModule/src/jsMain/resources" type="kotlin-resource" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Multiplatform.mainModule.commonMain" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.5.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.10" level="project" />
+  </component>
+</module>

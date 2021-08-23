@@ -1,0 +1,6 @@
+/.gradle/
+/build/
+/android/build/
+/desktop/build/
+/browser/build/
+/common/build/

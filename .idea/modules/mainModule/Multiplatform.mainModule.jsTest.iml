@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output-test url="file://$MODULE_DIR$/../../../mainModule/build/classes/kotlin/js/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../mainModule/src/jsTest/kotlin">
+      <sourceFolder url="file://$MODULE_DIR$/../../../mainModule/src/jsTest/kotlin" type="kotlin-test" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../mainModule/src/jsTest/resources">
+      <sourceFolder url="file://$MODULE_DIR$/../../../mainModule/src/jsTest/resources" type="kotlin-test-resource" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Multiplatform.mainModule.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="Multiplatform.mainModule.commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="Multiplatform.mainModule.jsMain" scope="TEST" />
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../mainModule/build/classes/kotlin/js/main" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.5.10" level="project" />
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../mainModule/build/processedResources/js/main" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.5.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.5.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-js:1.5.10" level="project" />
+  </component>
+</module>
