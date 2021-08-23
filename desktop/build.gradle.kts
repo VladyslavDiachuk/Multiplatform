@@ -3,13 +3,11 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    // __KOTLIN_COMPOSE_VERSION__
     kotlin("jvm")
-    // __LATEST_COMPOSE_RELEASE_VERSION__
     id("org.jetbrains.compose") version "1.0.0-alpha1"
 }
 
-group = "me.user"
+group = "me.vldi"
 version = "1.0"
 
 repositories {
