@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    id("com.android.application")
+    id("com.android.library")
     id("kotlin-android-extensions")
 }
 
@@ -45,7 +45,6 @@ android {
     compileSdkVersion(30)
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        applicationId = "me.vldi.mainModule"
         minSdkVersion(24)
         targetSdkVersion(30)
     }
