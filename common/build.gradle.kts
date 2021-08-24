@@ -30,14 +30,30 @@ kotlin {
         }
     }
     sourceSets {
-        val commonMain by getting
-        val jvmMain by getting
-        val androidMain by getting {
+        val ktorVersion = "1.6.2"
+        val koinVersion= "3.1.2"
+
+        val commonMain by getting {
             dependencies {
-                implementation("com.google.android.material:material:1.4.0")
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.insert-koin:koin-core:$koinVersion")
             }
         }
-        val jsMain by getting
+        val jvmMain by getting {
+            dependencies {
+                implementation("io.ktor:ktor-client-cio:$ktorVersion")
+            }
+        }
+        val androidMain by getting {
+            dependencies {
+                implementation("io.ktor:ktor-client-android:$ktorVersion")
+            }
+        }
+        val jsMain by getting {
+            dependencies {
+                implementation("io.ktor:ktor-client-js:$ktorVersion")
+            }
+        }
     }
 }
 
