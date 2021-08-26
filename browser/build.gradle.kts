@@ -11,8 +11,11 @@ repositories {
 }
 
 dependencies {
+    val koinVersion = "3.1.2"
     implementation(project(":common"))
     implementation("org.jetbrains.kotlinx:kotlinx-html:0.7.2")
+    implementation("io.insert-koin:koin-core:$koinVersion")
+    implementation("dev.fritz2:core:0.11")
 }
 
 kotlin {

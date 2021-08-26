@@ -1,11 +1,11 @@
-package users
+package me.vldi.common.users
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import me.vldi.common.api.UsersApi
+import me.vldi.common.di.iODispatcher
 import me.vldi.common.entities.User
 
 class UsersController(private val usersApi: UsersApi) {
@@ -15,7 +15,7 @@ class UsersController(private val usersApi: UsersApi) {
     fun onShowUsersClick() {
         showUsersVisibility.tryEmit(false)
 
-        CoroutineScope(Dispatchers.Main).launch {
+        CoroutineScope(iODispatcher).launch {
             users.emit(usersApi.getUsers())
         }
     }

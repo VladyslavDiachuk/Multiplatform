@@ -3,9 +3,7 @@ package users
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Button
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
@@ -14,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import me.vldi.common.users.UsersController
 
 @Composable
 fun UsersScreen(usersController: UsersController) {
@@ -30,7 +29,7 @@ fun UsersScreen(usersController: UsersController) {
                 modifier = Modifier.padding(8.dp)
             ) {
                 Text(
-                    text = "Show users",
+                    text = "Users",
                     style = MaterialTheme.typography.button
                 )
             }
