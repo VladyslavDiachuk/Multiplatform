@@ -1,8 +1,9 @@
 package me.vldi.common.di
 
-import io.ktor.client.*
+import me.vldi.common.api.UsersApi
 import org.koin.dsl.module
 
 val commonDIModule = module {
-    single { HttpClient() }
+    singleHTTPClient()
+    single { UsersApi(get()) }
 }

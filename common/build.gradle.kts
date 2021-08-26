@@ -42,6 +42,7 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-cio:$ktorVersion")
+                implementation("io.ktor:ktor-client-gson:$ktorVersion")
             }
         }
         val androidMain by getting {
